@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "PlainCopy",
+  "version": "1.0.0",
+  "description": "Copy selected text as plain text without any formatting. Works with context menu and popup button.",
+  "permissions": [
+    "clipboardWrite",
+    "clipboardRead",
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PlainCopy - Copy as Plain Text"
+  },
+  "icons": {
+    "16": "icons/plain_copy_16.png",
+    "48": "icons/plain_copy_48.png",
+    "128": "icons/plain_copy_128.png"
+  }
+}
